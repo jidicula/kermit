@@ -106,7 +106,7 @@ def current_weather():
 
 def help():
     commandlist = """
-                    `@atlas tweet 'CONTENTS OF TWEET'`\n`@atlas ntc anat262 status`\n`@atlas ntc anat262 update 1 ready` or `@atlas ntc anat262 update 1 in progress`\n`@atlas weather`\n`@atlas restart`
+                    `@kermit tweet 'CONTENTS OF TWEET'`\n`@akermit weather`\n`@kermit restart`
                     """
     return commandlist
 
@@ -136,7 +136,7 @@ def restart_program():
 if __name__ == "__main__":
     READ_WEBSOCKET_DELAY = 1 # 1 second delay between reading from firehose
     if slack_client.rtm_connect():
-        print("ATLAS connected and running!")
+        print("KERMIT connected and running!")
         while True:
             command, channel = parse_slack_output(slack_client.rtm_read())
             if command and channel:
