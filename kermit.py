@@ -106,7 +106,7 @@ def current_weather():
 
 def help():
     commandlist = """
-                    `@kermit tweet 'CONTENTS OF TWEET'`\n`@akermit weather`\n`@kermit restart`
+                    `@kermit tweet 'CONTENTS OF TWEET'`\n`@kermit weather`\n`@kermit restart`
                     """
     return commandlist
 
